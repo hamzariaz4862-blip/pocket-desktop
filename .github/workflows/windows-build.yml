@@ -22,10 +22,13 @@ jobs:
         run: npm ci
 
       - name: Build Windows installer
-        run: npx electron-builder --win nsis
+        run: npx electron-builder --win nsis --publish never
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
 
       - name: Upload installer
         uses: actions/upload-artifact@v4
         with:
           name: PocketOptionDesktop-Windows
           path: dist/*.exe
+
