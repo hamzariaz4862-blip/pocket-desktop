@@ -12,21 +12,38 @@
     "electron": "^32.0.0",
     "electron-builder": "^24.13.3"
   },
-  "build": {
-    "appId": "com.pocketdesktop.trading",
-    "productName": "PocketOptionDesktop",
-    "copyright": "© 2026 Pocket Desktop",
-"artifactName": "PocketOptionDesktop-${version}.dmg",
+"build": {
+  "appId": "com.pocketdesktop.trading",
+  "productName": "PocketOptionDesktop",
+  "copyright": "© 2026 Pocket Desktop",
 
-    "mac": {
-      "target": [
-        "dmg"
-      ],
-      "icon": "icon.icns",
-      "identity": null
-    },
-    "dmg": {
-      "title": "PocketOptionDesktop"
-    }
+  "artifactName": "PocketOptionDesktop-${version}-${os}-${arch}.${ext}",
+
+  "mac": {
+    "target": ["dmg"],
+    "icon": "icon.icns",
+    "identity": null
+  },
+
+  "dmg": {
+    "title": "PocketOptionDesktop"
+  },
+
+  "win": {
+    "icon": "icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "signAndEditExecutable": false
+  },
+
+  "nsis": {
+    "oneClick": true,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": false
   }
+}
 }
