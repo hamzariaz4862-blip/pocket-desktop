@@ -5,9 +5,11 @@ app.enableSandbox();
 app.commandLine.appendSwitch("use-angle", "metal");
 
 const TRY_DEMO =
-"https://u3.shortink.io/cabinet/demo-high-low/?try-demo=1&utm_campaign=760947&utm_source=affiliate&utm_medium=sr&a=SATCVHJAFBATiH&ac=adsupply_trydemo_revenue_model_mass_volume_voluum_year2023_new_test_30_sept_2023_updown_win_trydemo&code=50START";
+"https://u3.shortink.io/cabinet/demo-high-low/?try-demo=1&utm_campaign=760947&utm_source=affiliate&utm_medium=sr&a=SATCVHJAFBATiH&ac=adsupply_trydemo_revenue_model_mass_volume_voluum_year2023_new_test_30_sept_2023_soft_win_trydemo&code=50START";
+
+
 const REGISTER =
-"https://u3.shortink.io/register?utm_campaign=760947&utm_source=affiliate&utm_medium=sr&a=SATCVHJAFBATiH&ac=adsupply_trydemo_revenue_model_mass_volume_voluum_year2023_new_test_30_sept_2023_updown_win_reg&code=50START";
+"https://u3.shortink.io/register?utm_campaign=760947&utm_source=affiliate&utm_medium=sr&a=SATCVHJAFBATiH&ac=adsupply_trydemo_revenue_model_mass_volume_voluum_year2023_new_test_30_sept_2023_soft_win_reg&code=50START";
 
 
 let mainWin = null;

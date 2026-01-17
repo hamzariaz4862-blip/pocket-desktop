@@ -1,6 +1,6 @@
 {
   "name": "pocket-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Desktop trading demo wrapper",
   "main": "main.js",
   "private": true,
@@ -16,18 +16,20 @@
     "appId": "com.pocketdesktop.trading",
     "productName": "PocketOptionDesktop",
     "copyright": "© 2026 Pocket Desktop",
-
     "mac": {
-      "target": ["dmg"],
+      "target": [
+        "dmg"
+      ],
       "icon": "icon.icns",
       "identity": null
     },
-
     "win": {
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ],
       "icon": "icon.ico",
@@ -35,7 +37,6 @@
       "signAndEditExecutable": false,
       "verifyUpdateCodeSignature": false
     },
-
     "nsis": {
       "oneClick": false,
       "perMachine": false,
@@ -43,4 +44,3 @@
     }
   }
 }
-
