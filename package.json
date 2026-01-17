@@ -1,0 +1,32 @@
+{
+  "name": "pocket-desktop",
+  "version": "1.0.0",
+  "description": "Desktop trading demo wrapper",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac dmg"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.pocketdesktop.trading",
+    "productName": "PocketOptionDesktop",
+    "copyright": "© 2026 Pocket Desktop",
+"artifactName": "PocketOptionDesktop-${version}.dmg",
+
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "icon.icns",
+      "identity": null
+    },
+    "dmg": {
+      "title": "PocketOptionDesktop"
+    }
+  }
+}
